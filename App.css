@@ -1,0 +1,186 @@
+/* src/App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #6200ea;
+}
+
+.navbar {
+  display: flex;
+  gap: 1em; /* Space between buttons */
+}
+
+.navbar button {
+  padding: 0.5em 1em;
+  color: #000; /* Dark black color */
+  text-decoration: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3); /* Slightly transparent background */
+  backdrop-filter: blur(10px);
+  font-weight: bold; /* Make text bold */
+  border: none; /* Remove default button border */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background 0.3s, color 0.3s; /* Transition for hover effect */
+}
+
+.navbar button:hover {
+  background: rgba(255, 255, 255, 0.6); /* Change background on hover */
+  color: #6200ea; /* Change text color on hover */
+}
+
+.auth-buttons {
+  display: flex;
+}
+
+.signup-btn,
+.login-btn {
+  padding: 0.5em 1.2em;
+  border: none;
+  border-radius: 20px;
+  margin-left: 1em;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signup-btn {
+  background-color: #6200ea;
+  color: #ffffff;
+}
+
+.login-btn {
+  background-color: transparent;
+  color: #6200ea;
+  border: 1px solid #6200ea;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 3em 2em;
+}
+
+.hero-content {
+  max-width: 45%;
+  text-align: left;
+}
+
+h1 {
+  font-size: 3em;
+  animation: slideInUp 1.5s ease;
+}
+
+.subtitle {
+  margin-top: 1em;
+  color: #666;
+}
+
+.hero-buttons button {
+  padding: 0.75em 2em;
+  margin: 1em 0.5em 0 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.get-started {
+  background: linear-gradient(90deg, #6200ea, #ff00cc); /* Gradient background */
+  color: #ffffff;
+}
+
+.watch-demo {
+  background-color: #ffffff;
+  color: #6200ea;
+  border: 1px solid #6200ea;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card {
+  background-color: #f1f1f1;
+  padding: 2em;
+  border-radius: 15px;
+  margin: 1em;
+  min-width: 200px;
+  text-align: left;
+}
+
+.card-buttons button {
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.transfer-btn,
+.request-btn {
+  background: linear-gradient(90deg, #ff00cc, #6200ea); /* Gradient background for both buttons */
+  color: #ffffff;
+}
+
+.request-btn {
+  margin-left: 0.5em; /* Maintain space between buttons */
+}
+
+.income-details {
+  margin-top: 0.5em;
+  color: #333;
+}
+
+.target {
+  margin-top: 1em;
+  color: #ff00cc;
+}
+
+.trusted-section {
+  margin-top: 3em;
+  padding: 2em;
+  background-color: transparent;
+  color: #333;
+}
+
+.logos span {
+  margin: 0 1em;
+  font-size: 1em;
+  color: #666;
+}
+
+/* Slide animation */
+@keyframes slideInUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
